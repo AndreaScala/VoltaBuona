@@ -1,0 +1,11 @@
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.deps.json
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.json
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.runtimeconfig.dev.json
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\bin\Debug\netcoreapp2.0\ServiceAPI.pdb
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csprojResolveAssemblyReference.cache
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.csproj.CoreCompileInputs.cache
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfoInputs.cache
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.AssemblyInfo.cs
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.dll
+C:\Users\lab-1\Desktop\LucaZagaFunzionante\corsoing20172018\ServiceAPI\ServiceAPI\obj\Debug\netcoreapp2.0\ServiceAPI.pdb

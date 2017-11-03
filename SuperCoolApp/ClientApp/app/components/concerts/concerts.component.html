@@ -1,0 +1,38 @@
+<h1>Our Events <button (click)="addNewConcert()"> + </button></h1>
+
+<p *ngIf="!concerts"><em>Loading...</em></p>
+
+<div class="concert-home">
+    <div class="concerts-list" *ngIf="concerts">
+        <div *ngFor="let c of concerts"
+            [class.selected]="c === selectedConcert"
+            (click)="onSelect(c)"
+             [hidden]="c.deleted"
+             >
+            <span class="badge">{{c.id || '-' }}</span> {{c.name}} <span>{{c.hasChanges?'*':''}}</span>
+            <span class="badge" style="float: right;" (click)="delete(c)">delete</span>
+            <span class="badge" style="float: right;" (click)="book(psw,c)">Book</span>
+            <input class="badge" style="float: right;" type="password" [(ngModel)]="psw">
+        </div>
+    </div>
+    <div *ngIf="selectedConcert" class="concert-detail">
+        <h2 *ngIf="selectedConcert.id > 0">{{selectedConcert.name}} ({{selectedConcert.id}})</h2>
+        <h2 *ngIf="!selectedConcert.id">New Concert</h2>
+        <div>
+            <label>Name: </label>
+            <input [(ngModel)]="selectedConcert.name" placeholder="name" />
+        </div>
+        <div>
+            <label>Where: </label>
+            <input [(ngModel)]="selectedConcert.where" placeholder="where" />
+        </div>
+        <div>
+            <label>When: </label>
+            <input [(ngModel)]="selectedConcert.when" placeholder="when" />
+        </div>
+    </div>
+</div>
+
+<div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" (click)="saveChanges()">
+    <span>SAVE</span>
+</div>

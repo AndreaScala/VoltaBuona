@@ -1,0 +1,39 @@
+<h1>Our Customers <button (click)="addNewUser()"> + </button></h1>
+
+<p *ngIf="!users"><em>Loading...</em></p>
+
+<div class="user-home">
+    <div class="users-list" *ngIf="users">
+        <div *ngFor="let u of users"
+            [class.selected]="u === selectedUser"
+            (click)="onSelect(u)"
+             [hidden]="u.deleted"
+             >
+            <span class="badge">{{u.id || '-' }}</span> {{u.name}} <span>{{u.hasChanges?'*':''}}</span><span class="badge" style="float: right;" (click)="delete(u)">delete</span>
+        </div>
+    </div>
+    <div *ngIf="selectedUser" class="user-detail">
+        <h2 *ngIf="selectedUser.id > 0">{{selectedUser.name}} ({{selectedUser.id}})</h2>
+        <h2 *ngIf="!selectedUser.id">New User</h2>
+        <div>
+            <label>Name: </label>
+            <input [(ngModel)]="selectedUser.name" placeholder="name" />
+        </div>
+        <div>
+            <label>Surname: </label>
+            <input [(ngModel)]="selectedUser.surname" placeholder="surname" />
+        </div>
+        <div>
+            <label>Age: </label>
+            <input [(ngModel)]="selectedUser.age" placeholder="age" />
+        </div>
+        <div>
+            <label>Password: </label>
+            <input type="password" [(ngModel)]="selectedUser.password" placeholder="password" />
+        </div>
+    </div>
+</div>
+
+<div id="floating-button" data-toggle="tooltip" data-placement="left" data-original-title="Create" (click)="saveChanges()">
+    <span>SAVE</span>
+</div>
